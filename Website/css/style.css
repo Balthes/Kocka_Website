@@ -1,0 +1,145 @@
+
+
+
+/*BODY*/
+
+
+
+body{
+    background-color: rgba(23, 44, 138, 0.33)
+}
+
+
+
+/*NAVBAR*/
+
+
+
+.nav{
+    border: 2px solid black;
+    transition: 200ms;
+    cursor: default;
+    animation-name: example;
+    animation-duration: 4s;
+}
+.navbar{
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.navbar_menu{
+    border: 2px solid rgb(32, 50, 216);
+    background-color: rgb(32, 50, 216);
+    color: white;
+    border-radius: 20px;
+    min-width: 50px;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+.navbar_menu:hover{
+    background-color: rgb(78, 78, 206);
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    cursor: alias;
+}
+#icon_list{
+    height: 50px;
+    width: 50px;
+}
+.icon{
+    display: none;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+@media (max-width: 1000px) {
+    .navbar a{
+        display: none;
+    }
+    .icon {  
+        display: block;
+    }
+    .navbar.responsive a {
+        display: block;
+    }
+    .nav{
+        border: hidden;
+        
+    }
+}
+
+
+
+/*FIRST IMAGE*/
+
+
+
+.first_img{
+    height: 600px;
+    width: auto;
+    background-image: url('https://worldjusticeproject.org/sites/default/files/images/2016/humanrights.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+@media (max-width: 1000px){
+    .first_img{
+        height: 300px;
+        transition: 200ms;
+    }
+}
+@media (max-width: 750px){
+    .first_img{
+        height: 230px;
+        transition: 200ms;
+    }
+}
+@media (max-width: 565px){
+    .first_img{
+        height: 140px;
+        transition: 200ms;
+    }
+}
+
+
+
+/*CARDS*/
+
+
+
+.full{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+@media (min-width: 2000px){
+    .first_img{
+        background-position: center;
+    }
+}
+.card{
+    background-color: cornflowerblue;
+    height: 300px;
+    width: 250px;
+    border: solid rgb(100, 149, 237) 2px;
+    border-radius: 30px;
+    margin: 10px;
+}
+.card:hover{
+    background-color: rgb(78, 125, 212);
+    transform: scale(1.09);
+}
+#card_img{
+    height: 50px; 
+    width: 50px;
+}
